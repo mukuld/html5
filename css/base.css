@@ -1,0 +1,65 @@
+body {
+  font-family: "Segoe UI", "Calibri", "Arial", "sans-serif"
+}
+
+div {
+
+}
+
+/* All the IDs are stored here */
+#header {
+  position: relative;
+  size: 100%;
+  height: auto;
+  margin: auto;
+  padding: 5px;
+  background-color: rgba(147, 194, 191, 1);
+}
+#sidebar {
+  float: left;
+  width: 19%;
+  border-right: dotted thin;
+  padding: 5px;
+  margin: auto;
+}
+
+#box {
+  position: relative;
+  float: left;
+  width: 19%;
+  height: 150px;
+  border-right: dotted thin;
+  padding: 5px;
+  margin: auto;
+}
+
+#nav {
+
+}
+
+/* All the IDs end here */
+
+.title {
+  font-weight: bold;
+  color: #697681;
+  text-decoration: underline;
+}
+
+.centered {
+  text-align: center;
+}
+
+.item {
+  list-style: none;
+}
+
+/*-------- Hyperlink Styles-----------*/
+a {
+   text-decoration: none;
+}
+
+a:hover {
+   text-decoration: underline;
+}
+
+/*-------- Hyperlink Styles-----------*/

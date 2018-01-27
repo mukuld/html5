@@ -1,0 +1,17 @@
+You've learned a lot about web development so far. I want you to take a moment to write down your thoughts about web development here. Answer the following questions:
+  * What new skills have you learned?
+  * What has been easy?
+  * What has been difficult?
+  * How have you used the problem solving strategies from the first project to overcome challenges so far?
+
+---
+
+Your response goes here!
+
+* This has been a great refresher for me for web development. I had learnt web development some time ago, but it had fallen by the wayside with other priorities taking up my time and focus. I was able to quick review, remember and learn newer elements of HTML that were developed over the years.
+
+* The course design and content is very easy to understand so far. The projects and tasks have been simple for someone who has had some experience. Hoping for some tough challenges moving forward.
+
+* Finding time from my schedule has been a difficulty.
+
+* Not really applicable. The MDN reference is a great resource.
