@@ -1,0 +1,42 @@
+@import url(nav_bar.css);
+@import url(forms.css);
+body {
+    margin: 0;
+    /*background-color: lightgray; */
+    font-family: Segoe UI, Calibri, sans-serif;
+    overflow: hidden;
+}
+
+#heading {
+    text-align: center;
+    font-size: 3em;
+    width: 100%;
+    display: block;
+    padding-top: 15px;
+    clear: right;
+}
+
+.normaltext {
+    font-size: 14px;
+    width: 100%;
+    display: block;
+    width: 100%;
+}
+
+#box1 {
+    margin: 10px;
+    padding: 5px;
+    display: block;
+    width: 31%;
+    border: 1px dotted;
+    float: left;
+}
+
+li {
+    list-style: none;
+}
+
+.left {
+    float: left;
+    position: relative;
+}

@@ -1,0 +1,94 @@
+    @import url(new_nav_bar.css);
+    .logo {
+        /*grid-area: logo;*/
+        height: 100%;
+        line-height: 3rem;
+        align-self: center;
+    }
+    
+    .main-header {
+        height: 3rem;
+    }
+    
+    .main-menu {
+        grid-area: menu;
+        align-self: center;
+        justify-self: end;
+    }
+    
+    .content-area {
+        grid-area: content;
+    }
+    
+    .sidebar {
+        grid-area: sidebar;
+        padding: 1rem;
+    }
+    
+    .sponsors-wrapper {
+        grid-area: sponsors;
+    }
+    
+    .sponsors {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: auto;
+        grid-column-gap: 1rem;
+    }
+    
+    .sponsor {
+        margin-left: 0;
+        margin-right: 0;
+        background-color: #fff;
+        border-radius: 0.625rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .footer {
+        grid-area: footer;
+        justify-self: center;
+    }
+    /* Setting the content area display property to grid. */
+    
+    .container {
+        display: grid;
+        grid-template: 2fr 6fr 4fr;
+        grid-gap: 1rem 1rem;
+        grid-template-rows: 3rem;
+        grid-template-areas: "logo menu menu" "sidebar content content" "sponsors sponsors sponsors" "footer footer footer";
+    }
+    /*Common configurations */
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style: none;
+    }
+    
+    html {
+        font-size: 14px;
+        font-family: Segoe UI, Calibri, sans-serif;
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #fbfbfb;
+    }
+    
+    h1,
+    h2,
+    h3 {
+        margin-top: 0;
+    }
+    
+    main p {
+        margin-bottom: 0;
+    }
+    
+    nav {
+        margin-top: -13px;
+    }
