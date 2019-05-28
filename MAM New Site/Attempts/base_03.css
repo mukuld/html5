@@ -1,0 +1,47 @@
+@import url(nav_bar.css);
+
+body {
+   margin:0;
+   padding:0;
+   font-family:Georgia, Arial, sans-serif;
+   font-size:10pt;
+   }
+
+#top {
+   position:relative;
+   height:100px;
+   background:url("minneapolis_small.jpg")
+	no-repeat center;
+   width:100%;
+   }
+
+#leftcol {
+   width:14%;
+   float:left;
+   position:relative;
+   background-color:red;
+   padding:5px;
+   }
+
+#twocols {
+   width:83%;
+   float:right;
+   position:relative;
+   }
+
+#rightcol {
+   width:18%;
+   float:right;
+   position:relative;
+   padding:5px;
+   }
+
+#maincol {
+   float:left;
+   display:inline;
+   background-color:#DAE0D2;
+   width:75%;
+   text-align:justify;
+   padding:15px;
+   }
+   

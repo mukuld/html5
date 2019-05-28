@@ -1,0 +1,56 @@
+div.arial {
+   font-family: arial, courier;
+   }
+
+div.helvetica {
+   font-family: helvetica, courier;
+   }
+
+div.TimeNewRoman {
+   font-family: "Times New Roman", courier;
+   }
+
+div.MrsEaves {
+   font-family: "Mrs. Eaves", courier;
+   }
+
+div.cambria {
+   font-family: Cambria, courier;
+   }
+   
+div.bitstreamverasans {
+   font-family:"Bit Stream Vera Sans", courier;
+   }
+
+div.trebuchetms {
+   font-family: "Trebuchet MS", courier;
+   }
+
+div.tahoma {
+   font-family:Tahoma, courier;
+   }
+
+div.comicsansms {
+   font-family:"Comic Sans MS", courier;
+   }
+
+div.georgia {
+   font-family:Georgia, courier;
+   }
+
+div.arialnarrow {
+   font-family:"Arial Narrow", courier;
+   }
+
+div {
+   margin: 20px
+   line-height:28px;
+   }
+
+.b  {
+  font-weight: bold;
+   }
+
+.i  {
+  font-style: italic;
+   }

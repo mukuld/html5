@@ -1,0 +1,61 @@
+@import url(nav_bar.css);
+
+body {
+   margin:0;
+   padding:0;
+   }
+
+#pagewidth {
+   max-width:70em;
+   min-width:60em;
+   }
+
+#top {
+   position:relative;
+   height:100px;
+   background-color:#fff;
+   background:url("minneapolis_small.jpg") no-repeat center;
+   width:100%;
+   }
+
+#leftcol {
+   width:12.7%;
+   float:left;
+   position:relative;
+   background-color:red;
+   padding:8px;
+   }
+
+#twocols {
+   width:85%;
+   float:right;
+   position:relative;
+   background-color:#ff0ef0;
+   padding:8px;
+   }
+
+#rightcol {
+   width:15%;
+   float:right;
+   position:relative;
+   background-color:#000;
+   }
+
+#maincol {
+   background-color:#00ff04;
+   display:inline;
+   position:relative;
+   width:85%;
+   }
+
+.clearfix:after {
+   content:".";
+   display:block;
+   height:0;
+   clear:both;
+   visibility:hidden;
+   }
+
+.clearfix {
+   display:inline-block;
+   }

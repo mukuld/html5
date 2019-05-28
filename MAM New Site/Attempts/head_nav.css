@@ -1,0 +1,12 @@
+div.top {
+   position:fixed;
+   z-index:3;
+   top:0px;
+   left:0px;
+   width:100%;
+   padding:50px;
+/*   font-size:28px;
+   color:#ffffff; */
+   background-color:#FF0000;
+   background:url("minneapolis_small.jpg") no-repeat center;
+   }

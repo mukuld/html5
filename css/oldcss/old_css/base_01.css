@@ -1,0 +1,17 @@
+body {
+   margin:0;
+   padding:0;
+   }
+
+#pagewidth {
+   min-width:60em;
+   }
+
+#top {
+   position:relative;
+   height:100px;
+   background-color:#ffffff;
+   background:url("minneapolis_small.jpg") 
+     no-repeat center;
+   }
+

@@ -1,0 +1,30 @@
+p {
+   font-size:12pt;
+   }
+
+table {
+   table-width:100%;
+
+   }
+
+caption {
+   font-weight:bold;
+
+   }
+
+th {
+   height:50px;
+   font-size:18pt;
+   font-weight:bold;
+   text-align:center;
+   background-color:#fff;
+   }
+
+td {
+   text-align:left;
+   background-color:#fff;
+   }
+
+td, th {
+   padding:5px;
+   }

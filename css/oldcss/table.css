@@ -1,0 +1,13 @@
+table, td {
+	border: 1px, solid, #666;
+}
+th {
+	text-align: left;
+	background-color: #999;
+	}
+th, td {
+	padding: 0.4em;
+	}
+tr.alt td {
+	background: #ddd;
+	}

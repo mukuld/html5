@@ -1,0 +1,56 @@
+<html>
+
+<head>
+<script language='Javascript'>
+
+function computeForm(form)
+{
+   var flawn = form.lawn.value;
+   var flawn_rate = 0.20;
+   var fweed = form.weed.value;
+   var fweed_rate = 7.00;
+   var fhedge = form.hedge.value;
+   var fhedge_rate = 0.50;
+   var ffertz = form.fertz.value;
+   var ffertz_rate = 20.00;
+   var fground = form.ground.value;
+   var fground_rate = 15.00;
+   var ftotal_cost = 0;
+
+   ftotal_cost = (flawn*flawn_rate) + (fweed*fweed_rate) + (fhedge*fhedge_rate) + (ffertz*ffertz_rate) + (fground*fground_rate);
+
+form.total_cost.value = "$" + ftotal_cost;
+}
+
+function clearForm(form)
+
+{
+   form.lawn.value = "";
+   form.weed.value = "";
+   form.hedge.value = "";
+   form.fertz.value = "";
+   form.ground.value = "";
+   form.total_cost.value = "";
+}
+
+</script>
+</head>
+
+<body>
+
+<form method="post">
+	<label for "lawn">Lawn Mowing: [Sq Feet]</label>&nbsp;
+	<input type="text" name="Lawn" value="" maxlength="10" size="7" id="lawn" /><p>
+	<label for "weed">Weeding: [Sq Feet]</label>&nbsp;
+	<input type="text" name="weed" value="" maxlength="10" size="7" id="weed" /><p>
+	<label for "hedge">Hedge Trimming: [Sq Feet]</label>&nbsp;
+	<input type="text" name="hedge" value="" maxlength="10" size="7" id="hedge" /><p>
+	<label for "fertz">Fertilizing: [Sq Feet]</label>&nbsp;
+	<input type="text" name="fertz" value="" maxlength="10" size="7" id="fertz" /><p>
+	<label for "ground">Ground Dressing: [Sq Feet]</label>&nbsp;
+	<input type="text" name="ground" value="" maxlength="10" size="7" id="ground" /><p>
+	<input TYPE="button" VALUE="Quote" onClick=computeForm(this.form)>&nbsp;
+	<input type="button" value="Reset" onClick=clearForm(this.form)><p>
+	<label for "total_cost">Your cost:</label>&nbsp;
+	<input type="text" readonly name=total_cost size=10>
+</html>

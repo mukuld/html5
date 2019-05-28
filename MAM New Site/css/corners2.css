@@ -1,0 +1,38 @@
+.rndbox {
+
+   background:#eef3f5;
+/* 
+  width:300px;
+ 
+  font:0.8em Verdana, Arial, Helvetica, sans-serif;
+ 
+  color:#000033;*/
+   
+}
+
+
+.rndtop {
+
+   z-index:2;
+   position:relative;
+   background:url(../images/topright.gif) no-repeat right top;
+   
+}
+
+
+.rndbottom {
+   z-index:2;
+   position:relative;
+ 
+  background:url(../images/bottomright.gif) no-repeat right top;
+
+   }
+
+
+.rndbottom img {
+ 
+  display:block;
+   
+}
+
+

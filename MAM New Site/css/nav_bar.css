@@ -1,0 +1,53 @@
+   #head_nav {
+      float:left;
+      width:100%;
+      background:#DAE0D2 url("../images/bg.gif")
+	repeat-x bottom;
+      font-size:93%;
+      line-height:normal;
+      }
+
+   #head_nav ul {
+      margin:0px;
+      padding:10px 10px 0;
+      list-style:none;
+      }
+
+   #head_nav li {
+      float:left;
+      background:url("../images/left.gif")
+	no-repeat left top;
+      margin:0px;
+      padding:0 0 0 9px;
+      border-bottom:1px solid #765;
+      }
+
+   #head_nav a, #head_nav strong, #head_nav span {
+      float:left;
+      display:block;
+      background:url("../images/right.gif")
+	no-repeat right top;
+      padding:5px 15px 4px 6px;
+      text-decoration:none;
+      font-weight:bold;
+      color:#765;
+      }
+
+    /* Commented Backslash Hack
+       hides rule from IE5-Mac \*/
+    #header a {float:none;}
+    /* End IE5-Mac hack */
+
+   #head_nav a:hover {
+      color:#333;
+      }
+
+   #head_nav #current {
+      background-image:url("../images/left_on.gif");
+      border-width:0;
+      }
+
+   #head_nav #current a {
+      background-image:url("../images/right_on.gif");
+      padding-bottom:5px;
+      }

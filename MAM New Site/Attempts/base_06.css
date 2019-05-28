@@ -1,0 +1,104 @@
+@import url(nav_bar.css);
+@import url(table.css);
+@import url(corners2.css);
+
+body {
+   margin:0;
+   padding:0;
+   font-family:Georgia, Arial, sans-serif;
+   font-size:10pt;
+   }
+
+#top {
+   position:relative;
+   height:100px;
+   background:url("minneapolis_small.jpg")
+	no-repeat;
+   width:100%;
+   }
+
+#leftcol {
+   width:14%;
+   float:left;
+   position:relative;
+   padding:5px;
+   border-right-width:1px;
+   border-top-width:0;
+   border-bottom-width:0;
+   border-left-width:0;
+   border-style:solid;
+   border-right-color:#DAE0D2;
+   }
+
+#twocols {
+   width:83%;
+   float:right;
+   position:relative;
+   }
+
+#rightcol {
+   width:18%;
+   float:right;
+   position:relative;
+   padding:5px;
+   }
+
+#maincol {
+   float:left;
+   display:inline;
+   width:75%;
+   text-align:justify;
+   padding:15px;
+   border-right-width:1px;
+   border-top-width:0;
+   border-bottom-width:0;
+   border-left-width:0;
+   border-style:solid;
+   border-right-color:#000;
+   }
+   
+h1 {
+   font-family: Cambria, Arial, sans-serif;
+   font-size:20pt;;
+   color:#0000FF;
+   }
+
+div.nav {
+   z-index:1;
+   position:relative;
+  /* top:60px;
+   left:0px;
+   width:100px;
+   height:300px;*/
+   padding-left:10px;
+   padding-top:50px;
+   padding-bottom:10px;
+   background-color:#fff;
+   }
+
+a {
+   text-decoration:none;
+   }
+
+.left {
+   padding-left:30px;
+   }
+
+img.maincol {
+   float:left;
+   padding-right:5px;
+   }
+
+img {
+   align:top;
+    }
+#footer {
+   clear:both;
+   font-size:75%;
+   text-align:center;
+   border-top:10px solid #eef3f5;
+   }
+
+p {
+   align:center;
+   }

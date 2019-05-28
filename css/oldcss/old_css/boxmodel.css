@@ -1,0 +1,16 @@
+/* Style sheet for boxModel illustration  */
+
+body {
+   color:#000000;
+   background-color:#ffffff;
+   font-family:arial, verdana, sans-serif; 
+   font-size:12px;}
+
+body, h1, p, b {border-style:solid; border-width:2px; border-color:#000000; padding:2px;}
+
+img {
+   border-style:inset;
+   border-color:rgb(0,0,0);
+   }
+
+h1, b {background-color:#cccccc;}

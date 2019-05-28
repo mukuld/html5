@@ -1,0 +1,405 @@
+<html>
+<head>
+<script language='Javascript'>
+
+//DO NOT REMOVE THIS COPYWRITE INFO!
+//Electric Appliance Operating Cost Calculator
+//By Daniel C. Peterson
+//Web Winder Website Services, 1997-2009  All Rights Reserved.
+//Distribution, editing or reselling of this script is strictyly prohibited
+//without expressed written permission from Daniel C. Peterson.
+//For commercial grade (professional) versions of this and many other
+//calculators, visit http://www.webwinder.com.
+
+function formatNum(Vnum) {
+
+   if(Vnum > 99000000) {
+   alert("Sorry, this will not generate numbers larger that 99 million.");
+   focus();
+   } else {
+   
+   var V10million = parseInt(Vnum / 10000000);
+
+   var V1million = (Vnum % 10000000)  / 1000000;
+      if(V1million / 1000000 == 1) {
+      V1million = 1;
+      } else
+      if(V1million < 1) {
+      V1million = "0";
+     } else {
+      V1million = parseInt(V1million,10);
+     }
+
+    var V100thousand = (Vnum % 1000000)  / 100000;
+      if(V100thousand / 100000 == 1) {
+      V100thousand = 1;
+      } else
+      if(V100thousand < 1) {
+      V100thousand = "0";
+     } else {
+      V100thousand = parseInt(V100thousand,10);
+     }
+
+   var V10thousand = (Vnum % 100000)  / 10000;
+      if(V10thousand / 10000 == 1) {
+      V10thousand = 1;
+      } else
+      if(V10thousand < 1) {
+      V10thousand = "0";
+      } else {
+      V10thousand = parseInt(V10thousand,10);
+      }
+
+   var V1thousand = (Vnum % 10000)  / 1000;
+      if(V1thousand / 1000 == 1) {
+      V1thousand = 1;
+      } else
+      if(V1thousand < 1) {
+      V1thousand = "0";
+     } else {
+      V1thousand = parseInt(V1thousand,10);
+     }
+
+   var Vhundreds = (Vnum % 1000)  / 100;
+      if(Vhundreds / 100 == 1) {
+      Vhundreds = 1;
+      } else
+      if(Vhundreds < 1) {
+      Vhundreds = "0";
+     } else {
+      Vhundreds = parseInt(Vhundreds,10);
+     }
+
+   var Vtens = (Vnum % 100)  / 10;
+      if(Vtens / 10 == 1) {
+      Vtens = 1;
+      } else
+      if(Vtens < 1) {
+      Vtens = "0";
+     } else {
+      Vtens = parseInt(Vtens,10);
+     }
+
+   var Vones = (Vnum % 10)  / 1;
+      if(Vones / 1 == 1) {
+      Vones = 1;
+      } else
+      if(Vones < 1) {
+      Vones = "0";
+     } else {
+      Vones = parseInt(Vones,10);
+     }
+
+  var Vcents = parseInt(((Vnum % 1) * 100),10);
+
+ if(Vcents < 1) {
+  Vcents = "00";
+  }
+  else
+  if(Vcents % 10 == 0) {
+  Vcents = Vcents + "0";
+  }
+  else
+  if(Vcents % 10 == Vcents) {
+  Vcents = "0" + Vcents;
+  } else {
+  Vcents = Vcents;
+  }
+
+  if(Vcents == "900") {
+  Vcents = "90";
+  } else
+  if(Vcents == "800") {
+  Vcents = "80";
+  } else 
+  if(Vcents == "700") {
+  Vcents = "70";
+  } else 
+  if(Vcents == "600") {
+  Vcents = "60";
+  } else 
+  if(Vcents == "500") {
+  Vcents = "50";
+  } else 
+  if(Vcents == "400") {
+  Vcents = "40";
+  } else 
+  if(Vcents == "300") {
+  Vcents = "30";
+  } else
+  if(Vcents == "200") {
+  Vcents = "20";
+  } else
+  if(Vcents == "100") {
+  Vcents = "10";
+  } else {
+  Vcents = Vcents;
+  }
+
+   
+   var Vformat = "";
+
+   if(Vnum >= 10000000) {
+   Vformat = (V10million + "" + V1million + "," + V100thousand + "" + V10thousand + "" + V1thousand + "," + Vhundreds + "" + Vtens + "" + Vones + "." + Vcents);
+   }
+   else
+   if(Vnum >= 1000000) {
+   Vformat = (V1million + "," + V100thousand + "" + V10thousand + "" + V1thousand + "," + Vhundreds + "" + Vtens + "" + Vones + "." + Vcents);
+   }
+   else
+   if(Vnum >= 100000) {
+   Vformat = (V100thousand + "" + V10thousand + "" + V1thousand + "," + Vhundreds + "" + Vtens + "" + Vones + "." + Vcents);
+   }
+   else
+   if(Vnum >= 10000) {
+   Vformat = (V10thousand + "" + V1thousand + "," + Vhundreds + "" + Vtens + "" + Vones + "." + Vcents);
+   }
+   else
+   if(Vnum >= 1000) {
+   Vformat = (V1thousand + "," + Vhundreds + "" + Vtens + "" + Vones + "." + Vcents);
+   }
+   else
+   if(Vnum >= 100) {
+   Vformat = (Vhundreds + "" + Vtens + "" + Vones + "." + Vcents);
+   }
+   else
+   if(Vnum >= 10) {
+   Vformat = (Vtens + "" + Vones + "." + Vcents);
+   }
+   else
+   if(Vnum >= 1) {
+   Vformat = (Vones + "." + Vcents);
+   } else {
+   Vformat = ("0." + Vcents);
+   }
+
+  return Vformat;
+
+  }
+}
+
+
+function computeForm(form)
+
+{
+   var fbillDollar = form.billDollar.value;
+
+   var favgKWH = fbillDollar / form.billKWH.value;
+
+   var fwatts = form.watts.value;
+
+   var fvolts = form.volts.value;
+
+   var famps = form.amps.value;
+
+   var fdayKWH = 0;
+
+   var fdayCost = 0;
+
+   var fmonCost = 0;
+
+   if(fwatts == "") {
+     fdayKWH = fvolts * famps * form.avgHours.value / 1000;
+     } else {
+     fdayKWH = fwatts * form.avgHours.value / 1000;
+     }
+
+   fdayCost = fdayKWH * favgKWH;
+
+   fmonCost = fdayCost * 30.4;
+
+   form.avgKWH.value = "$" + formatNum(favgKWH);
+
+   form.dayKWH.value = fdayKWH;
+
+   form.dayCost.value = "$" + formatNum(fdayCost);
+
+   form.monCost.value = "$" + formatNum(fmonCost);
+
+   form.annCost.value = "$" + formatNum(fdayCost * 365);
+
+   form.percent.value = formatNum(fmonCost / fbillDollar * 100,10) + "%";
+
+   
+}
+
+
+function clearForm(form)
+
+{
+
+    
+    form.billDollar.value = "";
+
+    form.billKWH.value = "";
+
+    form.avgKWH.value = "";
+
+    form.watts.value = "";
+
+   form.volts.value = "";
+
+   form.amps.value = "";
+
+   form.avgHours.value = "";
+
+   form.dayKWH.value = "";
+
+   form.dayCost.value = "";
+
+   form.monCost.value = "";
+
+   form.annCost.value = "";
+
+   form.percent.value = "";
+
+
+}
+
+</script>
+</head>
+<title> JAvascript Calculator</title>
+<body>
+
+<form method="post">
+<table BORDER="1" CELLSPACING="0" CELLPADDING="4">
+
+<tr>
+<td align="center" COLSPAN="2">
+<font face='arial'><big><strong>Electric Appliance Operating Cost Calculator</strong></big></font>
+</td>
+</tr>
+
+<tr>
+<td COLSPAN="2">
+<font face='arial'><small>This JavaScript calculator will help you to
+estimate the cost of operating any given electrical appliance, based on the average KWH (kilowatt
+hours) used per day, and on the average cost per KWH charged by your electric company.</small></font>
+
+</td>
+</tr>
+
+<TR>
+<TD>
+<font face='arial'><small>Enter the dollar-amount of your last electric bill:</small></font>
+</TD>
+<TD>
+<INPUT TYPE=TEXT NAME=billDollar SIZE=9>
+</TD>
+</TR>
+
+<TR>
+<TD>
+<font face='arial'><small>Enter the total KWH's used during the billing period:</small></font>
+</TD>
+<TD>
+<INPUT TYPE=TEXT NAME=billKWH SIZE=9>
+</TD>
+</TR>
+
+
+
+<TR>
+<TD>
+<font face='arial'><small>Enter the watts as listed on the appliance:</small></font>
+</TD>
+<TD>
+<INPUT TYPE=TEXT NAME=watts SIZE=9>
+</TD>
+</TR>
+
+<TR>
+<TD>
+<font face='arial'><small>Or, if watts aren't given, enter the Volts:</small></font>
+</TD>
+<TD>
+<INPUT TYPE=TEXT NAME=volts SIZE=9>
+</TD>
+</TR>
+
+<TR>
+<TD>
+<font face='arial'><small>And, if watts aren't given, enter the amps:</small></font>
+</TD>
+<TD>
+<INPUT TYPE=TEXT NAME=amps SIZE=9>
+</TD>
+</TR>
+
+<TR>
+<TD>
+<font face='arial'><small>Enter the average number of hours per day this appliance is used:</small></font>
+</TD>
+<TD>
+<INPUT TYPE=TEXT NAME=avgHours SIZE=9>
+</TD>
+</TR>
+
+<TR>
+
+<TD COLSPAN="2"><CENTER><INPUT TYPE="button" VALUE="Compute" onClick=computeForm(this.form)>
+<INPUT TYPE="reset" VALUE="Reset" onClick=clearForm(this.form)></CENTER></TD>
+</TR>
+
+<TR>
+<TD>
+<font face='arial'><small>This is your average cost per KWH:</small></font>
+</TD>
+<TD>
+<INPUT TYPE=TEXT NAME=avgKWH SIZE=9>
+</TD>
+</TR>
+
+<TR>
+<TD>
+<font face='arial'><small>This is the KWH's this appliance uses per day:</small></font>
+</TD>
+<TD>
+<INPUT TYPE=TEXT NAME=dayKWH SIZE=9>
+</TD>
+</TR>
+
+<TR>
+<TD>
+<font face='arial'><small>This is the daily cost to operate this appliance:</small></font>
+</TD>
+<TD>
+<INPUT TYPE=TEXT NAME=dayCost SIZE=9>
+</TD>
+</TR>
+
+<TR>
+<TD>
+<font face='arial'><small>This is the monthly cost to operate this appliance:</small></font>
+</TD>
+<TD>
+<INPUT TYPE=TEXT NAME=monCost SIZE=9>
+</TD>
+</TR>
+
+<TR>
+<TD>
+<font face='arial'><small>This is the annual cost to operate this appliance:</small></font>
+</TD>
+<TD>
+<INPUT TYPE=TEXT NAME=annCost SIZE=9>
+</TD>
+</TR>
+
+<TR>
+<TD>
+<font face='arial'><small>This the percentage of your bill attributable to this appliance:</small></font>
+</TD>
+<TD>
+<INPUT TYPE=TEXT NAME=percent SIZE=9>
+</TD>
+</TR>
+
+<tr>
+<td align="center" COLSPAN="2"><font face='tahoma,arial'><small><small>Copyright © 1997-2009<i> <a href='http://www.webwinder.com'>Web Winder Site Traffic Magnets</a></i>. All rights reserved.</small></small></font></td>
+</tr>
+
+</TABLE>
+</FORM>
+</body>
+</html>
