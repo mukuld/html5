@@ -1,0 +1,13 @@
+table,
+th,
+td {
+    border: thin black solid;
+}
+
+th {
+    background-color: darkturquoise;
+}
+
+.alternate {
+    background-color: gainsboro;
+}
