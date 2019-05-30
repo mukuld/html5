@@ -5,8 +5,17 @@ body {
 
 div {
     position: relative;
+    float: left;
     padding: 10px;
     margin: 10px;
+}
+
+main {
+    position: relative;
+    float: left;
+    padding: 0;
+    margin: 0;
+    min-width: 80%;
 }
 
 
@@ -21,18 +30,10 @@ header {
     background-color: rgba(147, 194, 191, 1);
 }
 
-sidebar {
-    float: left;
-    width: 19%;
-    border-right: dotted thin;
-    padding: 5px;
-    margin: auto;
-}
-
 #box {
     position: relative;
     float: left;
-    width: 19%;
+    width: 81%;
     height: 150px;
     border-right: dotted thin;
     padding: 5px;
@@ -43,7 +44,7 @@ footer {
     font-size: small;
     position: absolute;
     top: 93%;
-    left: 48%;
+    left: 28%;
 }
 
 
