@@ -1,0 +1,146 @@
+/*-------- Page Element Styles ----------*/
+body {
+    font-family: "Lucida Grande", "Calibri";
+    font-size: 10pt;
+}
+
+pre {
+    height: auto;
+    width: 65%;
+    margin: auto;
+    padding: 10px;
+    font-size: 9pt;
+    border: dashed 1px;
+    background-color: #dfe7f1;
+}
+
+code {
+    height: auto;
+    width: auto;
+    margin: 5px;
+    padding: 3px;
+    font-size: 9pt;
+    border: solid 1px;
+    background-color: #dfe7f1;
+}
+
+blockquote {
+    background-color: #f4db8c;
+    position: relative;
+    top: -20px;
+    float: right;
+    display: inline;
+    padding: 5px;
+    width: 200px;
+    font: 13px "Futura";
+    color: #e8001d;
+    border: solid 1px #e8001d;
+    border-radius: 5px;
+}
+
+.inline {
+    display: inline;
+    float: left;
+    padding-right: 20px;
+}
+
+#middle {
+    position: relative;
+    margin: auto;
+    padding: 5px;
+    display: block;
+    width: 73%;
+    border: dotted 1px;
+    float: left;
+}
+
+#left {
+    position: relative;
+    display: block;
+    float: left;
+    width: 14.7%;
+    border: dotted 1px red;
+}
+
+#right {
+    text-align: center;
+    position: relative;
+    width: 10%;
+    /*border: dotted 1px blue;*/
+    float: right;
+}
+
+.bigbox {
+    position: relative;
+    width: 90%;
+    margin: auto;
+    padding-left: 30px;
+    border: dashed 1px;
+    overflow: hidden;
+}
+
+.box {
+    position: relative;
+    width: 19%;
+    height: 150px;
+    margin: auto;
+    border: dotted 1px;
+    float: left;
+    font-size: 9pt;
+}
+
+.centered {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    clear: both;
+    height: auto;
+    padding: 5px;
+/*    background-color: #dfe7f1; */
+    margin: auto;
+}
+/*-------- Page Element Styles ----------*/
+/*-------- Font Styles----------------*/
+h1 {
+    font-family: cursive, "Lucida Grande", "Lucida Sans", "Arial";
+    font-size: 15pt;
+}
+
+.fancy {
+    font-family: cursive, "Arial";
+}
+
+/*-------- Font Styles----------------*/
+/*-------- Hyperlink Styles-----------*/
+a {
+   text-decoration: none;
+}
+
+a:hover {
+   text-decoration: underline;
+}
+
+/*-------- Hyperlink Styles-----------*/
+/*-------- List Sytles ---------------*/
+.letters {
+    list-style-type: upper-latin;
+    text-align: left;
+}
+
+.invisible {
+    list-style-type: none;
+    margin-left: -30px;
+}
+
+/*-------- List Sytles ---------------*/
+/*-------- Image Sytles --------------*/
+#head_img {
+    position: relative;
+    height: 110px;
+    width: 369px;
+    z-index: -1;
+}
+
+/*-------- Image Sytles --------------*/

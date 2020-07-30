@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<title>Copy lines / letters in VI</title>
+<link rel="stylesheet" href="../../css/base.css" />
+<link rel="shortcut icon" type="image/x-icon" href="../../img/favicon.ico" />
+<meta name="description" content="Dharwadkar's new home on the web">
+<meta name="keywords" content="HTML,CSS,PHP,Python,Dharwadkar,Linux">
+<meta name="author" content="Mukul Dharwadkar">
+<meta charset="utf-8">
+<header>
+<!--#include virtual="/html5/header.html" -->
+</header>
+<div id="left">
+<p>Left Navigation Bar</p>
+</div>
+<div id="middle">
+    <h2>How to copy lines / characters in VI</h2>
+    <p>VI is a very powerful tool to edit documents in *nix based systems. In fact, I am writing this page on VI only. However, people have been kind of spoilt by the point and click and drag and right click world of the GUI based systems and do not really make use of the powerful features and tools provided by VI. If you are a Linux or Unix system administrator, you know how valuable tool VI is when you edit the configuration files.</p>
+    <p>One of the most frequent things I as a system administrator, needs to do is to copy characters / lines.</p>
+    <p>To copy characters, count the number of characters that you need to copy. You can easily find that by looking at the bottom right corner which gives the coordinates. The actual key sequence if you want to copy 3 characters is: <pre>3yl</pre></p>
+    
+    </p>Once the characters are copied, move your cursor to the location where you want to paste and type: <pre>p</pre>The same technique is used to copy lines. Instead of typing <pre>3yl</pre> you should type <pre>3yy</pre> to copy 3 lines and then move to the line after which you want to paste these lines and type </pre>p</pre>.</p>
+    <p>Similarly to move a set of lines you can type: <pre>3dd</pre>followed by <pre>p</pre> at the desired location to move the lines. The same technique can be used to delete the lines.
+</div>
+<div id="right">
+    <!--#include virtual="/html5/googleads.html" -->
+</div>
+<footer>
+    <!--#include virtual="/html5/footer.html" -->
+</footer>
+</html>

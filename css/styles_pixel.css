@@ -1,0 +1,49 @@
+body {
+    text-align: center;
+    font-family: Segoe UI, Calibri, Sans-serif;
+}
+
+h1 {
+    font-family: Monoton;
+    font-size: 70px;
+    margin: 0.2em;
+    background-color:lightblue;
+}
+
+h2 {
+    margin: 1em 0 0.25em;
+}
+
+h2:first-of-type {
+    margin-top: 0.5em;
+}
+
+table,
+tr,
+td {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+tr {
+    height: 20px;
+}
+
+td {
+    width: 20px;
+}
+
+input[type=number] {
+    width: 6em;
+}
+
+#pixelCanvas {
+	border-style: dotted;
+	border-color: black;
+	border-radius: 1px;
+	border-width: 0.5px;
+	}

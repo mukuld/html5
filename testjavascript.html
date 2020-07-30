@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+Question : did you like the training?
+
+<input type="radio" name="q4" value="Yes"> Yes
+<input type="radio" name="q4" value="Nope"> Not at all
+</body>
+<script>
+var ch = document.getElementsByName('q4');
+
+for (var i = ch.length; i--;) {
+    ch[i].onchange = function() {
+        alert(this.value);
+    }
+}
+</script>
+</html>

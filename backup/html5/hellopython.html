@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<title>Input Types in HTML5</title>
+<link rel="stylesheet" type="text/css" href="/css/base.css" />
+<link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico" />
+<meta name="description" content="First Python program on the web"
+<meta name="keywords" content="HTML5,Python,Apache,Webserver">
+<meta name="author" content="Mukul Dharwadkar">
+<meta charset="utf-8">
+<header>
+<!--#include virtual="/html5/header.html" -->
+<header>
+<div id="left">
+    <ul class="invisible">
+    </ul>
+</div>
+<div id="middle">
+	<h1>Hello World from <a href="http://www.python.org">Python</a> on the web</h1>
+	<p>I have been a long time fan of <a href="http://www.python.org">Python</a> language. However I have never been able to focus on it to learn completely. I will continue to try and learn as much as I can. One day, I had a thought about executing python on website. I knew it could be done as my full <a href="http://www.dharwadkar.com">website</a> runs on <a href="http://www.zope.org">Zope</a>/<a href="http://www.plone.org">Plone</a> which is written almost entirely in <a href="http://www.python.org">Python</a>. But the question was how do I do it.</p>
+	<blockquote>It is recommended to enable the flag for a particular directory to prevent execution on unintended scripts / programs from your web server.</blockquote>
+	<p>I searched on the internet and promptly found this <a href="http://docs.python.org/2/howto/webservers.html">tutorial</a>. Essentially to enable <a href="http://httpd.apache.org">Apache web server</a> to parse and execute <a href="http://www.python.org">python</a>, <a href="http://httpd.apache.org">Apache</a> needs to be told about the dynamic content (Details are <a href="http://httpd.apache.org/docs/2.2/howto/cgi.html">here</a> by enabling the<code>+ExecCGI</code>option in the server for the directory in which you plan to host the <a href="http://www.python.org">python</a>, scripts.</p>
+	<p>Below here is the very first program that you will write in any of the programming language... the ubiquitous "Hello World".</p>
+	<pre>#!/usr/bin/env python
+# -*- coding: UTF-8 -*-
+
+# enable debugging
+import cgitb
+cgitb.enable()
+
+print "Content-Type: text/plain;charset=utf-8"
+print
+
+print "Hello World!"</pre>
+	<p>Click <a href="/python/01_hello.py">here</a> to see <a href="http://www.python.org">Python</a> in action on my web server.</p>
+</div>
+<div id="right">
+    <!--#include virtual="/html5/googleads.html" -->
+</div>
+<footer>
+    <!--#include virtual="/html5/footer.html" -->
+</footer>
+</html>
