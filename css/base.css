@@ -1,6 +1,6 @@
 @import url(table.css);
 html {
-    background-color: #00539F;
+    /*background-color: #00539F;*/
     font-family: "Open Sans", sans-serif;
 }
 
@@ -9,7 +9,7 @@ body {
     font-family: "Open Sans", sans-serif;
     width: 75%;
     margin: 0 auto;
-    background-color: #FF9500;
+    /*background-color: #FF9500;*/
     padding: 0 20px 20px 20px;
     border: 5px solid black;
 }
