@@ -62,6 +62,9 @@ function resetGame() {
         resetParas(i).textContent = ""
     }
 
+    const clearGuesses = document.querySelector(".guesses")
+    clearGuesses.textContent = ""
+
     resetButton.parentNode.removeChild(resetButton)
 
     guessField.disabled = false
