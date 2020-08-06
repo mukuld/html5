@@ -3,10 +3,32 @@
 
 <head>
     <title>Guess My Number Game</title>
-    <!-- link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton"-->
+    <!-- This area of the head will contain all the meta data -->
+    <meta charset="utf-8">
+    <meta name="author" content="Mukul Dharwadkar">
+    <meta name="description" content="A simple guess my number game written in Javascript. Play it to have fun">
+    <!-- End of metadata -->
+
+    <!-- This area will contain the <link> section -->
+    <!-- link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton" -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="css/base.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- End of <link> section -->
+
+    <!-- This area will contain all the Javascripts that are loaded on this page -->
+    <script async src="javascript/main.js"></script>
+    <script defer src="javascript/helloplayer.js"></script>
+    <script defer src="javascript/guessmynumberv2.js"></script>
+    <script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- End of script area -->
+
+    <!-- This area will contain styling specific for this page only-->
+    <style>
+        .lastResult {
+            color: white;
+            padding: 3px;
+        }
+    </style>
 </head>
 
 <body>
@@ -24,27 +46,29 @@
             of tries that the user can take to guess. But keep watching this space. I plan to add more functionality to the program as we go forward and make it more interesting and challenging. At this time the range of numbers is just between 1 and
             100. I will add difficulty levels to the game so that you can challenge yourself.
         </p>
-        <p><a href="http://www.dharwadkar.com/">My website</a> has a lot of other things to offer than just games and fun. I am a technology enthusiast who likes to play around with technology and fortunately, as a part of my day job, I am able to play around
-            with technology as well as help my customers.</p>
-        <p>
-            <h2 class="centered">Choose your Number</h2>
-            <input class="centered" type="number" id="input" name="yourNumber"></input>
-            <input type="submit" id="submit"></input>
+        <h2>Update: Aug 6 2020</h2>
+        <p>I have included the promised functionlity here to limit the number of tries the player has. There are also also enhancements like:
+            <ol>
+                <li>Show the guesses the player has made</li>
+                <li>Ability to restart the game</li>
+                <li>Prevent player from entering more values once the correct number is guessed or if the player is out of tries.</li>
+            </ol>
         </p>
+        <p><a href="http://www.dharwadkar.com/" title="Mukul's Homepage" target="_blank">My website</a> (opens in a new tab) has a lot of other things to offer than just games and fun. I am a technology enthusiast who likes to play around with technology
+            and fortunately, as a part of my day job, I am able to play around with technology as well as help my customers.</p>
+        <h2 class="centered">Choose your Number</h2>
+        <div class="form">
+            <label for="guessField">Enter your guess: </label><input class="centered" type="number" id="guessField" class="guessField" name="yourNumber"></input>
+            <input type="submit" value="Submit guess" class="guessSubmit" id="submit"></input>
+        </div>
     </div>
     <p></p>
-    <div id="msgs">
-
-    </div>
-    <div id="org_num"></div>
-    <div>
-        <p id="result">The number was</p>
-        <p id="attempts">And it took you so many attempts</p>
+    <div clas="resultParas">
+        <p class="guesses"></p>
+        <p class="lastResult"></p>
+        <p class="lowOrHi"></p>
     </div>
     <button>Change user</button>
-    <script src="javascript/guessmynumber.js"></script>
-    <script src="javascript/main.js"></script>
-    <script src="javascript/helloplayer.js"></script>
 </body>
 
 </html>

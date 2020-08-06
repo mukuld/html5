@@ -1,6 +1,6 @@
 let myImage = document.querySelector("img")
 
-myImage.onclick = function() {
+myImage.onmouseover = function() {
     let mySrc = myImage.getAttribute("src")
     if (mySrc === "img/symbol.jpg") {
         myImage.setAttribute("src", "img/index.png")

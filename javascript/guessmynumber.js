@@ -1,6 +1,9 @@
-var num = Math.floor(Math.random() * 101) + 1;
+/* Here I am using the Math library and the random function. 
+I add one (1) to the output to account for the computer arithmetic of starting count from 0
+*/
+let num = Math.floor(Math.random() * 100) + 1;
 //var guess = Number(prompt("Take a guess between 1 and 100: "));
-var tries = 0;
+let tries = 0;
 //console.log(num)
 //document.getElementById("org_num").innerHTML = num
 
@@ -23,8 +26,10 @@ function guess_my_number(guess) {
 }
 
 $(submit).click(function() {
-    var u_number = Number($("#input").val());
-    var output = guess_my_number(u_number)
+    let u_number = Number($("#input").val());
+    let guesses = [];
+    guesses = guesses.append(u_number)
+    let output = guess_my_number(u_number)
     document.getElementById("result").innerHTML = u_number;
     document.getElementById("attempts").innerHTML = output;
 })
