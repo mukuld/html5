@@ -76,3 +76,5 @@ function resetGame() {
 
     num = Math.floor(Math.random() * 100) + 1
 }
+// adding something to make a change... {addjkahf
+}
