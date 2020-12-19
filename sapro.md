@@ -17,6 +17,14 @@ There are so many whitepapers on the AWS site that you can spend all your time r
 * [AWS Storage Services Overview](https://d1.awsstatic.com/whitepapers/AWS%20Storage%20Services%20Whitepaper-v9.pdf)
 * [AWS Key Management Service best practices](https://docs.aws.amazon.com/whitepapers/latest/kms-best-practices/kms-best-practices.pdf#welcome)
 * [AWS Database Migration Service best practices](https://d1.awsstatic.com/whitepapers/RDS/AWS_Database_Migration_Service_Best_Practices.pdf?did=wp_card&trk=wp_card)
+https://d0.awsstatic.com/whitepapers/extend-your-it-infrastructure-with-amazon-vpc.pdf
+https://docs.aws.amazon.com/vpc/latest/peering/vpc-pg.pdf
+https://d0.awsstatic.com/whitepapers/Storage/An_Overview_of_AWS_Cloud_Data_Migration_Services.pdf
+https://d0.awsstatic.com/whitepapers/Storage/Backup_and_Recovery_Approaches_Using_AWS.pdf
+https://d0.awsstatic.com/whitepapers/architecture/AWS-Cost-Optimization-Pillar.pdf
+https://d0.awsstatic.com/whitepapers/aws-web-hosting-best-practices.pdf
+https://d0.awsstatic.com/whitepapers/aws-kms-best-practices.pdf
+https://d0.awsstatic.com/whitepapers/Security/Secure_content_delivery_with_CloudFront_whitepaper.pdf
 
 Although there are a few more you should read, but these are the absolute minimum.
 
