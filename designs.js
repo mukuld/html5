@@ -1,3 +1,4 @@
+//Adding a comment to change the file.
 // Select color input
 let color, hght, wdth;
 color = $("#colorPicker").val()
@@ -8,7 +9,7 @@ $("#sizePicker").on("submit", function(e){
 	e.preventDefault();
 	makeGrid(); 
 	});
-
+//adding a comment to change the file.
 function makeGrid() {
 	hght = $("#inputHeight").val();
 	console.log("Height is = " + hght);
