@@ -4,16 +4,6 @@ html {
     font-family: "Open Sans", sans-serif;
 }
 
-body {
-    /*font-family: "Segoe UI", "Calibri", "Arial", "sans-serif"*/
-    /* font-family: "Open Sans", sans-serif; */
-    width: 75%;
-    margin: 0 auto;
-    /*background-color: #FF9500;*/
-    padding: 0 20px 20px 20px;
-    border: 2px solid black;
-}
-
 div {
     position: relative;
     /*   float: left; */
@@ -26,6 +16,14 @@ img {
     margin: 0 auto;
 }
 
+.alt {
+    background-color: antiquewhite;
+}
+
+.boxes {
+    width: 25%;
+}
+
 
 /* All the Semantic items are stored here */
 
@@ -36,6 +34,15 @@ header {
     margin: auto;
     padding: 5px;
     background-color: rgba(147, 194, 191, 1);
+}
+
+main {
+    /*font-family: "Segoe UI", "Calibri", "Arial", "sans-serif"
+    margin: 0 auto;
+    background-color: #FF9500;*/
+    padding: 0 20px 20px 20px;
+    border: 2px solid black;
+    width: 75%;
     overflow: auto;
 }
 
@@ -56,8 +63,13 @@ footer {
     left: 28%;
 }
 
+section {
+    float: left;
+    border: black thin dotted;
+}
 
-/* All the IDs end here */
+
+/*-----Semantics------/
 
 
 /*------------- Navigational Elements ------------*/
@@ -65,6 +77,8 @@ footer {
 nav {
     position: relative;
     float: left;
+    width: 12%;
+    min-height: 75%;
 }
 
 .floatfigure {
@@ -118,24 +132,18 @@ h1 {
     text-shadow: 3px 3px 1px black;
 }
 
-
-/*h2 {
+h2 {
     margin: 0px;
-    color: white;
     font-size: 24px;
     text-align: center;
     font-weight: bolder;
 }
-*/
 
 p,
 li {
     font-size: 16px;
     line-height: 2;
     letter-spacing: 1px;
-}
-
-.item {
     list-style: none;
 }
 
