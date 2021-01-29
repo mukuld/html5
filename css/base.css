@@ -87,11 +87,8 @@ nav {
 .floatfigure {
     float: left;
     border-right: thin black solid;
-    margin-left: 0;
-    margin-top: 20px;
-    margin-right: 20px;
-    margin-bottom: 0;
-    padding-right: 15px;
+    margin: 0;
+    padding: 0;
 }
 
 .navsidebar {
@@ -167,4 +164,9 @@ li {
 .main-image {
     width: 150px;
     height: 150px;
+}
+
+.head-image {
+    width: 50px;
+    height: 60px;
 }
