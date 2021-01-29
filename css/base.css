@@ -64,6 +64,7 @@ footer {
 }
 
 section {
+    position: relative;
     float: left;
     border: black thin dotted;
 }
