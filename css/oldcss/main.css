@@ -10,7 +10,7 @@ header {
 header img {
     height: 100px;
     width: 300px;
-} 
+}
 
 nav {
     float: left;
@@ -32,7 +32,7 @@ nav a {
 }
 
 nav li {
-    marging: 0;
+    margin: 0;
     padding: 0;
     background-color: #EEBA42;
     float: left;
