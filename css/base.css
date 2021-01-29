@@ -86,7 +86,6 @@ nav {
 
 .floatfigure {
     float: left;
-    border-right: thin black solid;
     margin: 0;
     padding: 0;
 }
@@ -167,6 +166,7 @@ li {
 }
 
 .head-image {
-    width: 60;
+    float: left;
+    width: 60px;
     height: 60px;
 }
