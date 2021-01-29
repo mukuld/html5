@@ -36,6 +36,7 @@ header {
     margin: auto;
     padding: 5px;
     background-color: rgba(147, 194, 191, 1);
+    overflow: auto;
 }
 
 #box {
@@ -68,10 +69,15 @@ nav {
 
 .floatfigure {
     float: left;
+    border-right: thin black solid;
     margin-left: 0;
     margin-top: 20px;
     margin-right: 20px;
     margin-bottom: 0;
+    font-size: 16px;
+    padding-right: 15px;
+    width: 12%;
+    min-height: 75%;
 }
 
 .navsidebar {
