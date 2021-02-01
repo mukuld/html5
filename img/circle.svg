@@ -3,5 +3,5 @@ baseProfile="full"
 width="300" height="300"
 xmlns="http://www.w3.org/2000/svg">
 <rect width="100%" height="100%" fill="black" />
-<circle cx="150" cy="100" r="90" fill="blue" />
+<circle cx="150" cy="200" r="90" fill="blue" />
 </svg>
