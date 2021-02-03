@@ -35,7 +35,8 @@ header {
     height: auto;
     margin: auto;
     padding: 15px;
-    background-color: rgba(147, 194, 191, 1);
+    background-color: #e0e8e7;
+    /*background-color: rgba(147, 194, 191, 1);*/
 }
 
 main {
@@ -122,7 +123,8 @@ a:hover {
 h1 {
     margin: 0;
     padding: 20px, 0;
-    color: #00539F;
+    color: #d3e7e9;
+    /*color: #00539F;*/
     font-size: 60px;
     text-align: center;
     text-shadow: 3px 3px 1px black;
