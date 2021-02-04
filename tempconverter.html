@@ -1,27 +1,58 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Temperature Convertor</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
     <link rel="stylesheet" href="css/base.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
+
 <body>
-    <h1 class = "centered">World's best temperature converter</h1>
-    <div class = "centered">
-    	<p><h2 class = "centered">Choose your unit:</h2></p>
-    </div>
-    <div class = "centered">
-    	<input type="radio" id="unitSelect" name="unitSelect" value="c"></input>Celcius
-    	<input type="radio" id="unitSelect" name="unitSelect" value="f"></input>Fahrenheit
-    </div>
-    <div id = "main-area" class = "centered">
-    	<p><h2 class="txt">Enter the temperature value you want to convert</h2></p>
-    	<input type="number" id="temp" name="temperature"></input>
-    	<input type="number" id="result" name="convertedTemp" readonly></input>
-    	<p><input id="submit" type="submit"></p>
-    </div>
-    <div id="output"></div>
-    <script src="javascript/tempconverter.js"></script>
+    <header>
+        <h1 class="centered">Welcome to Mukul's Web Experiment Page</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="http://www.dharwadkar.com">Mukul's Homepage</a>
+            </li>
+            <li>
+                <a href="backup/index.html">My previous work</a>
+            </li>
+            <li>
+                <a href="../nandini/index.html">Nandini's Homepage</a>
+            </li>
+            <li>
+                <a href="../csp/index.html">Jayant's Homepage</a>
+            </li>
+            <li>
+                <a href=#>Home Page</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <h2 class="centered">World's best temperature converter</h2>
+        <section class="centered">
+            <p>
+                <h3 class="centered">Choose your unit:</h3>
+            </p>
+        </section>
+        <div class="centered">
+            <input type="radio" id="unitSelect" name="unitSelect" value="c"></input>Celcius
+            <input type="radio" id="unitSelect" name="unitSelect" value="f"></input>Fahrenheit
+        </div>
+        <div id="main-area" class="centered">
+            <p>
+                <h3 class="txt">Enter the temperature value you want to convert</h3>
+            </p>
+            <input type="number" id="temp" name="temperature"></input>
+            <input type="number" id="result" name="convertedTemp" readonly></input>
+            <p><input id="submit" type="submit"></p>
+        </div>
+        <div id="output"></div>
+        <script src="javascript/tempconverter.js"></script>
+    </main>
 </body>
+
 </html>

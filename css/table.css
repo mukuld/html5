@@ -1,9 +1,23 @@
 table,
 th,
-td {
+td,
+tr {
     border: thin black solid;
 }
 
 th {
     background-color: darkturquoise;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+tr.pixel {
+    height: 20px;
+}
+
+td.pixel {
+    width: 20px;
 }

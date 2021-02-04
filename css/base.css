@@ -173,3 +173,18 @@ li {
     width: 60px;
     height: 60px;
 }
+
+h2:first-of-type {
+    margin-top: 0.5em;
+}
+
+input[type=number] {
+    width: 6em;
+}
+
+#pixelCanvas {
+    border-style: dotted;
+    border-color: black;
+    border-radius: 1px;
+    border-width: 0.5px;
+}
