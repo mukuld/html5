@@ -22,7 +22,8 @@ h2.letter {
     padding: 0;
 }
 
-p,
+
+/* p,
 ul,
 ol,
 dl,
@@ -36,4 +37,4 @@ dd,
 dt,
 address {
     line-height: 1.5;
-}
+} */
