@@ -6,6 +6,7 @@
 h1.pixels {
     font-family: Monoton;
     font-size: 70px;
+    color: black;
     margin: 0.2em;
     background-color: lightblue;
 }
