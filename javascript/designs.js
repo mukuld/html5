@@ -35,6 +35,7 @@ function makeGrid() {
         for (let c = 0; c < wdth; c++) {
             $("#row" + r).append('<td class="pixel"></td>');
             console.log("c = " + c);
+            console.log($("#row" + r))
         };
     };
 };
