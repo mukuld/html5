@@ -33,7 +33,7 @@ function makeGrid() {
         $("table").append("<tr id = row class='pixel'" + r + "></tr>");
         console.log("r = " + r);
         for (let c = 0; c < wdth; c++) {
-            $("#row" + r).append('<td>f</td>');
+            $("#row" + r).append('<td class="pixel"></td>');
             console.log("c = " + c);
         };
     };
