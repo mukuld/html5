@@ -1,16 +1,16 @@
-body {
+/*body {
     text-align: center;
     font-family: Segoe UI, Calibri, Sans-serif;
-}
+}*/
 
-h1 {
+h1.pixels {
     font-family: Monoton;
     font-size: 70px;
     margin: 0.2em;
-    background-color:lightblue;
+    background-color: lightblue;
 }
 
-h2 {
+h2.pixels {
     margin: 1em 0 0.25em;
 }
 
@@ -42,8 +42,8 @@ input[type=number] {
 }
 
 #pixelCanvas {
-	border-style: dotted;
-	border-color: black;
-	border-radius: 1px;
-	border-width: 0.5px;
-	}
+    border-style: dotted;
+    border-color: black;
+    border-radius: 1px;
+    border-width: 0.5px;
+}
