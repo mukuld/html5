@@ -9,6 +9,7 @@ h1.pixels {
     color: black;
     margin: 0.2em;
     background-color: lightblue;
+    text-shadow: none;
 }
 
 h2.pixels {
