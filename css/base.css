@@ -140,7 +140,13 @@ h2 {
 }
 
 p,
-li {
+li,
+dd,
+dl,
+dt,
+ol,
+ul,
+address {
     font-size: 16px;
     line-height: 2;
     letter-spacing: 1px;
