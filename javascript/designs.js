@@ -40,7 +40,7 @@ function makeGrid() {
 };
 
 function addColor() {
-    $('td class="pixel"').click(function() {
+    $('<td class="pixel"></td>').click(function() {
         colorChoice = $("#colorPicker").val()
             //console.log("colorChoice");
         $(this).css("background-color", colorChoice);
