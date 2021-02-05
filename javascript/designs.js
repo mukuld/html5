@@ -33,18 +33,18 @@ function makeGrid() {
         $("table").append("<tr id = row class='pixel'" + r + "></tr>");
         //console.log("r = " + r);
         for (let c = 0; c < wdth; c++) {
-            $("#row" + r).append('<td class="pixel"' > < /td>');
-                //console.log("c = " + c);
-            };
+            $("#row" + r).append('<td class="pixel"></td>');
+            //console.log("c = " + c);
         };
     };
+};
 
-    function addColor() {
-        $("td class = pixel").click(function() {
-            colorChoice = $("#colorPicker").val()
-                //console.log("colorChoice");
-            $(this).css("background-color", colorChoice);
-        })
-    };
+function addColor() {
+    $("td class = pixel").click(function() {
+        colorChoice = $("#colorPicker").val()
+            //console.log("colorChoice");
+        $(this).css("background-color", colorChoice);
+    })
+};
 
-    //cell in row ' + r + ', column ' + c + '
+//cell in row ' + r + ', column ' + c + '
