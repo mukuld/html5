@@ -31,11 +31,11 @@ function makeGrid() {
     //console.log("Width is " + wdth);
     for (let r = 0; r < hght; r++) {
         $("table").append("<tr id = row class='pixel'" + r + "></tr>");
-        console.log("r = " + r);
+        //console.log("r = " + r);
         for (let c = 0; c < wdth; c++) {
             $("#row" + r).append('<td class="pixel"></td>');
             console.log("c = " + c);
-            console.log($("#row" + r))
+            //console.log($("#row" + r))
         };
     };
 };
