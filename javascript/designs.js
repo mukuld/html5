@@ -26,15 +26,15 @@ function clearGrid() {
 function makeGrid() {
     //eraseGrid();
     hght = $("#inputHeight").val();
-    console.log("Height is = " + hght);
+    //console.log("Height is = " + hght);
     wdth = $("#inputWidth").val();
-    console.log("Width is " + wdth);
+    //console.log("Width is " + wdth);
     for (let r = 0; r < hght; r++) {
         $("table").append("<tr id='row' class='pixels'></tr>");
-        console.log("r = " + r);
+        //console.log("r = " + r);
         for (let c = 0; c < wdth; c++) {
-            //$("#row").append('<td></td>');
-            console.log("c = " + c);
+            $("#row").append(`<td>${r}</td>`);
+            //console.log("c = " + c);
             //console.log($("#row" + r))
         };
     };
