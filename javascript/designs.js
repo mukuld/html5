@@ -30,7 +30,7 @@ function makeGrid() {
     wdth = $("#inputWidth").val();
     //console.log("Width is " + wdth);
     for (let r = 0; r < hght; r++) {
-        $("table").append("<tr id='row' class='pixels'></tr>");
+        $("table").append("<tr id='row" + r + "' class='pixels'></tr>");
         //console.log("r = " + r);
         for (let c = 0; c < wdth; c++) {
             $("#row" + r).append("<td></td>");
