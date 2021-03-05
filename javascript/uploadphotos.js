@@ -1,6 +1,6 @@
-var albumBucketName = "BUCKET_NAME";
-var bucketRegion = "REGION";
-var IdentityPoolId = "IDENTITY_POOL_ID";
+var albumBucketName = "www.dilippandit.com";
+var bucketRegion = "us-east-1";
+var IdentityPoolId = "us-east-1:434d33da-e15f-46fe-b9d4-f96d2fb9f9ec";
 
 AWS.config.update({
     region: bucketRegion,
