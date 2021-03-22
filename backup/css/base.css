@@ -1,4 +1,5 @@
 /*-------- Page Element Styles ----------*/
+
 body {
     font-family: "Lucida Grande", "Calibri";
     font-size: 10pt;
@@ -98,11 +99,16 @@ footer {
     clear: both;
     height: auto;
     padding: 5px;
-/*    background-color: #dfe7f1; */
+    /*    background-color: #dfe7f1; */
     margin: auto;
 }
+
+
 /*-------- Page Element Styles ----------*/
+
+
 /*-------- Font Styles----------------*/
+
 h1 {
     font-family: cursive, "Lucida Grande", "Lucida Sans", "Arial";
     font-size: 15pt;
@@ -112,18 +118,26 @@ h1 {
     font-family: cursive, "Arial";
 }
 
+
 /*-------- Font Styles----------------*/
+
+
 /*-------- Hyperlink Styles-----------*/
+
 a {
-   text-decoration: none;
+    text-decoration: none;
 }
 
 a:hover {
-   text-decoration: underline;
+    text-decoration: underline;
 }
 
+
 /*-------- Hyperlink Styles-----------*/
+
+
 /*-------- List Sytles ---------------*/
+
 .letters {
     list-style-type: upper-latin;
     text-align: left;
@@ -134,13 +148,18 @@ a:hover {
     margin-left: -30px;
 }
 
+
 /*-------- List Sytles ---------------*/
+
+
 /*-------- Image Sytles --------------*/
+
 #head_img {
     position: relative;
     height: 110px;
     width: 369px;
     z-index: -1;
 }
+
 
 /*-------- Image Sytles --------------*/
