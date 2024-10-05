@@ -1,0 +1,154 @@
+@import url(table.css);
+html {
+    /*background-color: #00539F;*/
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    /*font-family: "Segoe UI", "Calibri", "Arial", "sans-serif"*/
+    font-family: "Open Sans", sans-serif;
+    width: 75%;
+    margin: 0 auto;
+    /*background-color: #FF9500;*/
+    padding: 0 20px 20px 20px;
+    border: 5px solid black;
+}
+
+div {
+    position: relative;
+    /*   float: left; */
+    padding: 10px;
+    margin: 10px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* All the Semantic items are stored here */
+
+header {
+    position: relative;
+    size: 100%;
+    height: auto;
+    margin: auto;
+    padding: 5px;
+    background-color: rgba(147, 194, 191, 1);
+}
+
+#box {
+    position: relative;
+    float: left;
+    width: 81%;
+    height: 150px;
+    border-right: dotted thin;
+    padding: 5px;
+    margin: auto;
+}
+
+footer {
+    font-size: small;
+    position: absolute;
+    top: 93%;
+    left: 28%;
+}
+
+
+/* All the IDs end here */
+
+
+/*------------- Navigational Elements ------------*/
+
+nav {
+    position: relative;
+}
+
+.floatfigure {
+    float: left;
+    margin-left: 0;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 0;
+}
+
+.navsidebar {
+    float: left;
+    border-right: thin black solid;
+    font-size: 16px;
+    padding-right: 15px;
+    width: 12%;
+    min-height: 75%;
+}
+
+
+/*--------- Navigational Elements -----------*/
+
+
+/*-------- Hyperlink Styles-----------*/
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/*-------- Hyperlink Styles-----------*/
+
+
+/*-------- Text formating section ----*/
+
+h1 {
+    margin: 0;
+    padding: 20px, 0;
+    color: #00539F;
+    font-size: 60px;
+    text-align: center;
+    text-shadow: 3px 3px 1px black;
+}
+
+
+/*h2 {
+    margin: 0px;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    font-weight: bolder;
+}
+*/
+
+p,
+li {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+
+.item {
+    list-style: none;
+}
+
+.centered {
+    text-align: center;
+}
+
+.title {
+    font-weight: bold;
+    color: #697681;
+    text-decoration: underline;
+}
+
+
+/*-------- Text formating section ----*/
+
+
+/*-------- Image formating section ----*/
+
+.main-image {
+    width: 150px;
+    height: 150px;
+}

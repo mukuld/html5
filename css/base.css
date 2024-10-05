@@ -1,17 +1,9 @@
-@import url(table.css);
+/* @import url(table.css);
+@import url(letter.css);
+@import url(styles_pixel.css);*/
 html {
     /*background-color: #00539F;*/
     font-family: "Open Sans", sans-serif;
-}
-
-body {
-    /*font-family: "Segoe UI", "Calibri", "Arial", "sans-serif"*/
-    font-family: "Open Sans", sans-serif;
-    width: 75%;
-    margin: 0 auto;
-    /*background-color: #FF9500;*/
-    padding: 0 20px 20px 20px;
-    border: 5px solid black;
 }
 
 div {
@@ -26,6 +18,16 @@ img {
     margin: 0 auto;
 }
 
+.alt {
+    /*background-color: antiquewhite;*/
+    background-color: gainsboro;
+}
+
+.boxes {
+    width: 32.5%;
+    padding-top: 10px;
+}
+
 
 /* All the Semantic items are stored here */
 
@@ -34,8 +36,19 @@ header {
     size: 100%;
     height: auto;
     margin: auto;
-    padding: 5px;
-    background-color: rgba(147, 194, 191, 1);
+    padding: 15px;
+    background-color: #e0e8e7;
+    /*background-color: rgba(147, 194, 191, 1);*/
+}
+
+main {
+    /*font-family: "Segoe UI", "Calibri", "Arial", "sans-serif"
+    margin: 0 auto;
+    background-color: #FF9500;*/
+    padding: 20px;
+    border: 2px solid black;
+    width: auto;
+    overflow: auto;
 }
 
 #box {
@@ -55,22 +68,29 @@ footer {
     left: 28%;
 }
 
+section {
+    position: relative;
+    float: left;
+    border: black thin dotted;
+}
 
-/* All the IDs end here */
+
+/*-----Semantics------/
 
 
 /*------------- Navigational Elements ------------*/
 
 nav {
     position: relative;
+    float: left;
+    width: 20%;
+    min-height: 75%;
 }
 
 .floatfigure {
     float: left;
-    margin-left: 0;
-    margin-top: 20px;
-    margin-right: 20px;
-    margin-bottom: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .navsidebar {
@@ -105,30 +125,32 @@ a:hover {
 h1 {
     margin: 0;
     padding: 20px, 0;
-    color: #00539F;
+    /*color: #00539F;*/
+    color: #7fc3e1;
+    font-weight: bold;
     font-size: 60px;
     text-align: center;
     text-shadow: 3px 3px 1px black;
 }
 
-
-/*h2 {
+h2 {
     margin: 0px;
-    color: white;
     font-size: 24px;
     text-align: center;
     font-weight: bolder;
 }
-*/
 
 p,
-li {
+li,
+dd,
+dl,
+dt,
+ol,
+ul,
+address {
     font-size: 16px;
     line-height: 2;
     letter-spacing: 1px;
-}
-
-.item {
     list-style: none;
 }
 
@@ -140,6 +162,7 @@ li {
     font-weight: bold;
     color: #697681;
     text-decoration: underline;
+    margin: 5px;
 }
 
 
@@ -152,3 +175,91 @@ li {
     width: 150px;
     height: 150px;
 }
+
+.head-image {
+    float: left;
+    width: 60px;
+    height: 60px;
+}
+
+/*-------- Table CSS -------------------*/
+table,
+th,
+td,
+tr {
+    border: thin black solid;
+}
+
+th {
+    background-color: darkturquoise;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+tr {
+    height: 20px
+}
+
+td {
+    width: 20px
+}
+/*------------ End of Table CSS --------*/
+
+/*---------- Letter CSS ----------------*/
+.sender-column {
+    text-align: right;
+}
+
+h1.letter {
+    font-size: 1.5em;
+    color: black;
+    text-align: left;
+    text-align: left;
+    text-shadow: none;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+h2.letter {
+    font-size: 1.3em;
+    text-align: left;
+    text-shadow: none;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+/*---------- End of Letter CSS --------*/
+
+/*--------- Pixel Art maker CSS -------*/
+h1.pixels {
+    font-family: Monoton;
+    font-size: 70px;
+    color: black;
+    margin: 0.2em;
+    background-color: lightblue;
+    text-shadow: none;
+}
+
+h2.pixels {
+    margin: 1em 0 0.25em;
+}
+
+h2:first-of-type {
+    margin-top: 0.5em;
+}
+
+input[type=number] {
+    width: 6em;
+}
+
+#pixelCanvas {
+    border-style: dotted;
+    border-color: black;
+    border-radius: 1px;
+    border-width: 0.5px;
+}
+/*------- End of Pixel Art maker CSS --*/

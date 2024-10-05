@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Photo Uploader</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link rel="stylesheet" href="css/base.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- **DO THIS**: -->
+    <!--   Replace SDK_VERSION_NUMBER with the current SDK version number -->
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.857.0.min.js"></script>
+    <script src="javascript/uploadphotos.js"></script>
+    <script>
+        function getHtml(template) {
+            return template.join('\n');
+        }
+        listAlbums();
+    </script>
+</head>
+
+<body>
+    <h1>My Photo Albums App</h1>
+    <div id="app"></div>
+</body>
+
+</html>

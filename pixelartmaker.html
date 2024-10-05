@@ -1,32 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
+
 <head>
     <title>Pixel Art Maker!</title>
+    <meta charset="utf-8" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
-    <link rel="stylesheet" href="css/styles_pixel.css">
+    <link rel="stylesheet" href="css/base.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
+
 <body>
-    <h1>Lab: Pixel Art Maker</h1>
+    <header>
+        <h1 class="centered">Welcome to Mukul's Web Experiment Page</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="http://www.dharwadkar.com">Mukul's Homepage</a>
+            </li>
+            <li>
+                <a href="backup/index.html">My previous work</a>
+            </li>
+            <li>
+                <a href="../nandini/index.html">Nandini's Homepage</a>
+            </li>
+            <li>
+                <a href="../csp/index.html">Jayant's Homepage</a>
+            </li>
+            <li>
+                <a href="index.html">Home Page</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <h1 class="pixels">Lab: Pixel Art Maker</h1>
 
-    <h2>Choose Grid Size</h2>
-    <form id="sizePicker">
-        Grid Height:
-        <input type="number" id="inputHeight" name="height" min="1" value="1">
-        Grid Width:
-        <input type="number" id="inputWidth" name="width" min="1" value="1">
-        <input type="submit">
-    </form>
+        <h2 class="pixels">Choose Grid Size</h2>
+        <form class="centered" id="sizePicker">
+            Grid Height: <input type="number" id="inputHeight" name="height" min="1" value="1"> Grid Width: <input type="number" id="inputWidth" name="width" min="1" value="1">
+            <input type="submit">
+        </form>
 
-    <h2>Pick A Color</h2>
-    <input type="color" id="colorPicker">
+        <h2 class="pixels">Pick A Color</h2>
+        <div class="centered">
+            <input type="color" id="colorPicker">
+        </div>
 
-    <h2>Design Canvas</h2>
-    <table id="pixelCanvas"></table>
+        <h2 class="pixels">Design Canvas</h2>
+        <table id="pixelCanvas"></table>
 
-	<div id="clearGrid">
-		<input type="submit" value="Clear grid">
-	</div>
-    <script src="javascript/designs.js"></script>
+        <div class="centered" id="clearGrid">
+            <input type="submit" value="Clear grid">
+        </div>
+        <script src="javascript/designs.js"></script>
+    </main>
 </body>
+
 </html>
